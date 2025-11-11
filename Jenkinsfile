@@ -20,7 +20,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/taibMH/spring-petclinic.git',
+                    url: 'https://github.com/TaherMansourii/spring-petclinic-devsecops.git',
                     credentialsId: 'f72b2e8b-21eb-4853-b050-32fd26cbb0d5'
             }
         }
