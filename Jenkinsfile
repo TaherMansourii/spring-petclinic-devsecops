@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('H/5 * * * *')  // Make sure this line exists
-    }
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['dev', 'prod'], description: 'Target environment')
     }
